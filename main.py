@@ -9,17 +9,17 @@ humanC = input("What's your move?:\n"
                "2- Paper\n"
                "3- Scissors")
 
-if humanC == 'Rock' and computerC == 'Paper':
+if humanC.lower() == 'rock' and computerC.lower() == 'paper':
     print('You lose')
-elif humanC == 'Rock' and computerC == 'Scissors':
+elif humanC.lower() == 'rock' and computerC.lower() == 'scissors':
     print('You win')
-elif humanC == 'Paper' and computerC == 'Rock':
+elif humanC.lower() == 'paper' and computerC.lower() == 'rock':
     print('You Win')
-elif humanC == 'Paper' and computerC == 'Scissors':
+elif humanC.lower() == 'paper' and computerC.lower() == 'scissors':
     print('You Lose')
-elif humanC == 'Scissors' and computerC == 'Rock':
+elif humanC.lower() == 'scissors' and computerC.lower() == 'rock':
     print('You Lose')
-elif humanC == 'Scissors' and computerC == 'Paper':
+elif humanC.lower() == 'scissors' and computerC.lower() == 'paper':
     print('You Win')
 else:
     print('Draw')
